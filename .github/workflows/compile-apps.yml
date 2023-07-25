@@ -23,6 +23,9 @@ jobs:
     - name: Run postbuild Test
       run: make test
 
-
+    - name: Create comment
+      uses: peter-evans/create-or-update-comment@v3
+      with:
+          body-path: test.out
        
   
