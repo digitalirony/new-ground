@@ -19,11 +19,10 @@ jobs:
 
     - name: Compile
       run: make compile
-      
-  test:
-     runs-on: ubuntu-latest
-     steps:
-     - name: Run postbuild Test
-       run: make test
+       
+    - name: Run postbuild Test
+      run: make test
+
+
        
   
