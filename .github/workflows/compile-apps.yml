@@ -19,3 +19,14 @@ jobs:
 
     - name: Compile
       run: make compile
+       
+    - name: Run postbuild Test
+      run: make test
+
+    - name: Create comment
+      uses: peter-evans/create-or-update-comment@v3
+      with:
+          issue-number: ${{ github.event.number }}
+          body-path: test.out
+       
+  

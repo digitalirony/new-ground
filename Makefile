@@ -21,4 +21,5 @@ reset:
 	curl localhost:8080/zero
 
 test: up
-	python tests/e2e.py
+	python tests/e2e.py > test.out
+	cat test.out
