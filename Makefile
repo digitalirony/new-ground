@@ -22,4 +22,4 @@ reset:
 
 test: up
 	python tests/e2e.py > test.out
-        cat test.out
+	cat test.out
